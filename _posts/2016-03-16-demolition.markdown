@@ -1,8 +1,8 @@
 ---
-title:  "Agent-based Spatial Pattern Modeling Using NetLogo Part 2"
-date:   2016-02-22 10:05:23
+title:  "Making Demolition Decision Using ArcGIS"
+date:   2016-03-16 21:05:23
 categories: GIS
-tags: GIS
+tags: GIS, ArcGIS
 ---
 I developed this model to simulate simple random motion and biased random motion within constrained space. The major difference with the [previous model](https://flyingsiying.github.io/2016/netlogo1/) is that this model loads pre-created GIS data to generate NetLogo data.
 

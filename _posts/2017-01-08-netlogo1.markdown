@@ -1,8 +1,8 @@
 ---
 title:  "Agent-based Spatial Pattern Modeling Using NetLogo Part 1"
-date:   2016-01-08 15:04:23
+date:   2017-01-08 15:04:23
 categories: GIS
-tags: GIS
+tags: GIS, NetLogo
 ---
 I developed this model to simulate the interaction between two groups of agents (or breeds), `turtles` and `grass`. This model was inspired by the ["Wolf Sheep Predation Model"]["Wolf Sheep Predation Model"].
 
