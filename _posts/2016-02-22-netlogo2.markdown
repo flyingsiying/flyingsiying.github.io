@@ -4,7 +4,7 @@ date:   2016-02-22 10:05:23
 categories: GIS
 tags: GIS
 ---
-I developed this model to simulate simple random motion and biased random motion within constrained space. The major difference with the [previous model](https://flyingsiying.github.io/blog/2016/netlogo1/) is that this model loads pre-created GIS data to generate NetLogo data.
+I developed this model to simulate simple random motion and biased random motion within constrained space. The major difference with the [previous model](https://flyingsiying.github.io/2016/netlogo1/) is that this model loads pre-created GIS data to generate NetLogo data.
 
 How this model works:
 * This program loads the GIS data of the Ohio State University buildings and pavement from
@@ -16,7 +16,7 @@ shapefiles.
 * `test-arrival` tests if a student is within 5 units of the target. If so, the student moves to that target, is removed, and the arrival-count is incremented.
 
 Demo:
-![](https://raw.githubusercontent.com/flyingsiying/blog/gh-pages/images/demo/osu.gif)
+![](/images/demo/osu.gif)
 
 
 To set up, the model loads the GIS data and sets the envelope for the NetLogo world.
