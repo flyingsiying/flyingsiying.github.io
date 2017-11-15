@@ -2,7 +2,7 @@
 title:  "Agent-based Spatial Pattern Modeling Using NetLogo Part 2"
 date:   2017-02-22 10:05:23
 categories: GIS
-tags: GIS
+tags: GIS, NetLogo
 ---
 I developed this model to simulate simple random motion and biased random motion within constrained space. The major difference with the [previous model](https://flyingsiying.github.io/2016/netlogo1/) is that this model loads pre-created GIS data to generate NetLogo data.
 
