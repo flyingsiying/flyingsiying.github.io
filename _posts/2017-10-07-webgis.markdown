@@ -1,6 +1,0 @@
----
-title:  "Some Progress I Made For the Web GIS Application"
-date:   2016-02-22 10:05:23
-categories: Web Application
-tags: GIS, JavaScript, Web Application
----
