@@ -4,3 +4,49 @@ date:   2017-09-11 17:30:00
 categories: GIS
 tags: GIS, Java, Web Application
 ---
+
+Before building the actual clipping function, I created this `findBestPoint`
+function to return the intersection point of a straight line and a perpendicular
+line to a known point on this straight line.      
+
+Here is a simple example.
+Point 1 and 2 are two given points that lies on a straight line The coordinates of point 1 and point 2 are as follows:
+
+x1 = 24965.715799805574, y1 = -397295.5640998855;
+x2 = 23701.147599808868, y2 = -397373.1828998886;
+
+Then we can get the slope of the straight line (a).
+a = (y1 - y2)/(x1 - x2);
+
+
+We can also get the intercept (b) the line segment between point 1 and 2.
+b =  (x1 * y2 - x2 * y1) / (x1 - x2);
+
+Point 3 is another given point that stands outside of the given straight line with known coordinates:
+x3 = 24572.124511823895, y3 = -397345.93904533144;
+
+If we draw a perpendicular line from point 3 to the given straight line, we can get the slope (k) of this perpendicular line and corresponding intercept(m).
+k = -1/a;
+m = y0 - x0*k;
+
+Then we can calculate the coordinates of the intersection point of the given straight line and the drawn perpendicular line:
+x = (m - b)/(a - k);  
+y = a*x + b; 
+
+```ruby
+public final static Coordinate findBestPoint(Coordinate myCoord, Coordinate coord1, Coordinate coord2){
+  Coordinate result = null;
+  try {
+    Double a = (coord1.y - coord2.y) / (coord1.x - coord2.x);
+    Double b = (coord1.x * coord2.y - coord2.x * coord1.y) / (coord1.x - coord2.x);
+    Double k = -1/a;
+    Double m = myCoord.y - myCoord.x * k;
+    Double x = (m - b) / (a - k);
+    Double y = a*x + b;
+    result = new Coordinate(x, y);
+  } catch (Exception e) {
+    ExceptionUtil.throwIllegalStateException(e);
+  }
+  return result;
+}
+```
