@@ -15,15 +15,15 @@ Each ArcGIS REST Service usually has properties that describe it, operations tha
 
 How does my application work? It consists of two major parts - parsing and searching.
 
-First, an user can parse in his service(s) by simply entering the service URL. This URL can be at the server level or the layer level.
+First, a user can parse in his service(s) by simply entering the service URL. This URL can be at the server level or the layer level.
 He can also choose whether to create thumbnail images or assign a rank to his service(s). If the thumbnail option is chosen, the parsing process
 would create an overview visualization for this service.  
 ![](/images/demo/arcgis-rest-1.gif)
 
 
-Then, an user can search any parsed services in the database by keywords.
+Then, a user can search any parsed services in the database by keywords.
 ![](/images/demo/arcgis-rest-2.gif)
 
 
-Last but not least, an user can click onto each search result to enter the Web GIS interface so that he could play around with the layer.
+Last but not least, a user can click onto each search result to enter the Web GIS interface so that he could play around with the layer.
 ![](/images/demo/arcgis-rest-3.gif)
