@@ -6,3 +6,8 @@
 .img-fluid {
   height: 400px !important;
 }
+
+.timeline-photo {
+  width: 400px;
+  height: auto;
+}
